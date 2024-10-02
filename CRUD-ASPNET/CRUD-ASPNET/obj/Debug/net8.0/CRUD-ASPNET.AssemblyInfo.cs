@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUD-ASPNET")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df9439ddbc24e98a4a110bd126c97686a9a8fde4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+185c98fd11e62065ec0f401294c4c1790d57e07b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUD-ASPNET")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUD-ASPNET")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
