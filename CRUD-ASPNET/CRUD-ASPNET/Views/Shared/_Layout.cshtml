@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<!D
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,10 +8,60 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CRUD_ASPNET.styles.css" asp-append-version="true" />
+    <style>
+        
+        body {
+            background-color: #1e1e1e; 
+            color: #d4d4d4; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header, footer {
+            background-color: #252526;
+            color: #d4d4d4;
+        }
+
+        a.navbar-brand {
+            color: #569cd6; 
+        }
+
+        .nav-link {
+            color: #d4d4d4;
+        }
+
+            .nav-link:hover {
+                color: #9cdcfe; 
+            }
+
+        .navbar {
+            border-bottom: 1px solid #3c3c3c; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+        }
+
+        .container, .footer .container {
+            padding: 20px; 
+        }
+
+        footer {
+            border-top: 1px solid #3c3c3c; 
+        }
+
+            footer .container {
+                text-align: center;
+                padding: 10px 0;
+            }
+
+        main {
+            background-color: #252526; 
+            
+            border-radius: 10px; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">App de Notas</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -20,9 +71,8 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Notas" asp-action="Index">Notas</a>
+                            <a class="nav-link" asp-area="" asp-controller="Notas" asp-action="Index">Notas</a>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -30,18 +80,19 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+                @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted">
         <div class="container">
-            &copy; 2024 - App de Notas 
+            &copy; 2024 - App de Notas
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+        @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
